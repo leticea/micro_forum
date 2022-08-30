@@ -25,6 +25,13 @@
     font: 0,7em tahoma;
     text-align: center;
     border-radius: 10px;
+}
 
+.form_login {
 
+    width: 400px;
+    border: 1px solid black;
+    margin: 20px auto 20px auto;
+    padding: 20px;
+    text-align: left;
 }

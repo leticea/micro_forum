@@ -28,12 +28,24 @@
     $motor = $ligacao->prepare($sql);
     $motor->execute();
 
+    echo '<p>Tabela "users" criada com sucesso.</p>';
+
     //--------------------------------------------------------
     //tabela "posts" - posts do micro forum
-
+    $sql="CREATE TABLE posts(
+            id_post         INT NOT NULL PRIMARY KEY,
+            id_user         INT NOT NULL,
+            titulo          VARCHAR(100),
+            mensagem        TEXT,
+            data_post       DATETIME,
+            FOREIGN KEY(id_user) REFERENCES users(id_user) ON DELETE CASCADE)";
+  
+    $motor = $ligacao->prepare($sql);
+    $motor->execute();
     $ligacao = null;
 
-
-
+    echo '<p>Tabela "posts" criada com sucesso.</p>';
+    echo '<hr>';
+    echo '<p>Processo de criação da base de dados terminado com sucesso.</p>';
 
 ?>
