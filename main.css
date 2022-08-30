@@ -27,11 +27,17 @@
     border-radius: 10px;
 }
 
-.form_login {
+.form_login, .form_signup {
 
     width: 400px;
     border: 1px solid black;
     margin: 20px auto 20px auto;
     padding: 20px;
     text-align: left;
+}
+
+input[type="submit"] {
+
+    width: 80px;
+    padding: 3px;
 }
