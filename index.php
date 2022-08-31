@@ -1,15 +1,23 @@
 <?php 
 
     //INDEX
-    $id_sessao = session_id();
-    if (empty($id_sessao)) session_start();
+    session_start();
+    $sessao_user = null;
+    if (!isset($_SESSION['user'])) {
+
+        include 'cabeçalho.php';
+        echo '<div class="mensagem">Já se encontra logado no site.<br><br><a href="forum.php">Avançar</a></div>';
+        include 'rodape.php';
+        exit;
+    }
+
 
 
     //--------------------------------------------------------
     //cabeçalho
     include 'cabeçalho.php';
 
-    if ($id_sessao == null) {
+    if ($sessao_user == null) {
 
         include 'login.php';
     }

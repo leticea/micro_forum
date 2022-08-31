@@ -3,7 +3,7 @@
     //LOGIN
 
     echo
-        '<form class="form_login" method="post" action="login.php">
+        '<form class="form_login" method="post" action="login_verificacao.php">
 
         <h3>Login</h3><hr><br>
         Para entrar no Fórum, é necessário introduzir o seu username e password.<br>

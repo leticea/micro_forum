@@ -65,3 +65,12 @@ input[type="submit"] {
     text-align: center;
     margin: 30px auto 30px auto;
 }
+
+.mensagem {
+
+    width: 400px;
+    border: 1px solid black;
+    margin: 30px auto 30px auto;
+    padding: 20px;
+    text-align: center;
+}
