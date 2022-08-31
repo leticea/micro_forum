@@ -9,7 +9,8 @@
     if (isset($_SESSION['user'])) {
 
         include 'cabeçalho.php';
-        echo '<div class="mensagem">Já se encontra logado no site.<br><br><a href="forum.php">Avançar</a></div>';
+        echo '<div class="mensagem"><strong>'.$_SESSION['user'].'</strong> já se encontra logado no site.<br><br>
+        <a href="forum.php">Avançar</a></div>';
         include 'rodape.php';
         exit;
     }

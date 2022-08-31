@@ -1,13 +1,12 @@
 <?php
 
     //SIGNUP
-    $id_sessao = session_id();
-    if (empty($id_sessao)) session_start();
+    session_start();
+    unset($_SESSION['user']);
 
     //-------------------------------------------------------------------
     //cabeçalho
     include 'cabeçalho.php';
-
 
     //verificar se foram inseridos dados de utilizador
     if (!isset($_POST['btn_submit'])) {
