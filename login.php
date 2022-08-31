@@ -13,8 +13,6 @@
         Password:<br><input type="password" size="20" name="text_password"><br><br>
         <input type="submit" name="btn_submit" value="Entrar">
 
-                
-        
         </form>';
 
 ?>
