@@ -53,7 +53,7 @@ input[type="submit"] {
     padding: 5px;
 }
 
-.novo_registro_sucesso {
+.novo_registro_sucesso, .login_sucesso {
 
     border: 2px groove rgb(170,170,170);
     padding: 20px;

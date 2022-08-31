@@ -3,6 +3,9 @@
     //INDEX
     session_start();
     $sessao_user = null;
+
+    //unset($_SESSION['user']);
+
     if (isset($_SESSION['user'])) {
 
         include 'cabeçalho.php';
