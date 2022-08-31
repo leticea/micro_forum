@@ -48,4 +48,8 @@ input[type="submit"] {
     color: red;
     font: bold 12px tahoma;
     text-align: center;
+    width: 600px;
+    border: 1px solid rgb(170,170,170);
+    padding: 5px;
+
 }
