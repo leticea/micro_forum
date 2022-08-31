@@ -13,6 +13,10 @@
     if(!isset($_POST['btn_submit'])) {
 
         apresentarFormulario();
+
+    } else {
+
+        registrarUtilizador();
     }
 
 
@@ -40,15 +44,58 @@
             Avatar:<input type="file" name="imagem_avatar"><br>
             <small>(Imagem do tipo <strong>JPG</strong>, tamanho máximo: <strong>50kb</strong>)</small><br><br>
 
-            
             <input type="submit" name="btn_submit" value="Criar"><br><br>
             <a href="index.php">Voltar</a>
-
             
             </form>';
-
     }
 
+    //--------------------------------------------------------
+    function registrarUtilizador()
+    {
+        //executar as operações necessárias para o registro de um novo utilizador
+        $utilizador = $_POST['text_utilizador'];
+        $password_1 = $_POST['text_password_1'];
+        $password_2 = $_POST['text_password_2'];
 
+        //avatar
+        $avatar = $_FILES['imagem_avatar'];
+        $erro = false;
+
+        //--------------------------------------------------------
+        //verificação de erros do utilizador
+        if($utilizador == "" || $password_1 == "" || $password_2 == "") {
+
+            //ERRO - Não foram preenchidos os campos necessários
+            echo '<div class="erro">Não foram preenchidos os campos necessários.</div>';
+            $erro = true;
+
+        } elseif($password_1 != $password_2) {
+
+            //ERRO - passwords não coincidem
+            echo '<div class="erro">As passwords não coincidem.</div>';
+            $erro = true;
+        }
+
+        //--------------------------------------------------------
+        //erros do Avatar
+        elseif($avatar['name'] != "" && $avatar['type'] != "image/jpeg") {
+
+            //  ERRO - Arquivo de imagem inválido
+            echo '<div class="erro">Arquivo de imagem inválido.</div>';
+            $erro = true;
+
+        } elseif($avatar['name'] != "" && $avatar['size'] > $_POST['MAX_FILE_SIZE']) {
+
+            //  ERRO - Arquivo de imagem maior que o permitido
+            echo '<div class="erro">Arquivo de imagem maior que o permitido.</div>';
+            $erro = true;
+        }
+
+        //verificar se existiram erros
+
+
+        echo '<p>Terminado</p>';
+    } 
 
 ?>

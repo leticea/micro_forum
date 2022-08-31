@@ -41,3 +41,11 @@ input[type="submit"] {
     width: 80px;
     padding: 3px;
 }
+
+.erro {
+
+    margin: 20px auto 20px auto;
+    color: red;
+    font: bold 12px tahoma;
+    text-align: center;
+}
