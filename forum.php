@@ -16,6 +16,13 @@
     include 'cabeçalho.php';
 
     //--------------------------------------------------------
+    //dados do utilizador que está logado
+    echo '<div>
+        <img src="/opt/lampp/htdocs/'.$_SESSION['avatar'].'"><span>'.$_SESSION['user'].'</span> | <a href="logout.php">Logout</a>
+    </div>';
+
+
+    //--------------------------------------------------------
     include 'rodape.php';
 
 ?>
