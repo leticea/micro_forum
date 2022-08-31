@@ -131,10 +131,30 @@
                 $id_temp = 0;
             else
                 $id_temp++;
-        }
 
+            //encriptar a password
+            $passwordEncriptada = md5($password_1);
+
+            $sql = "INSERT INTO users VALUES( :id_user, :user, :pass, :avatar)";
+            $motor = $ligacao->prepare($sql);
+            $motor->bindParam(":id_user", $id_temp, PDO::PARAM_INT);
+            $motor->bindParam(":user", $utilizador, PDO::PARAM_STR);
+            $motor->bindParam(":pass", $passwordEncriptada, PDO::PARAM_STR);
+            $motor->bindParam(":avatar", $avatar['name'], PDO::PARAM_STR);
+            $motor->execute();
+            $ligacao = null;
+
+            //upload do arquivo de imagem do avatar para o servidor web
+            move_uploaded_file($avatar['tmp_name'], "/opt/lampp/htdocs/".$avatar['name']);
+
+            //apresentar uma mensagem de boas vindas ao novo utilizador
+            echo '<div class="novo_registro_sucesso">Bem-vindo ao Fórum, <strong>'.$utilizador.'</strong><br><br>
+            A partir deste momento está em condições de fazer o seu login e participar desta comunidade online.
+            <br><br>
+            <a href="index.php">Quadro de login</a>            
+            </div>';
+        }
         
-        echo '<p>Terminado</p>';
     } 
 
 ?>
