@@ -74,3 +74,38 @@ input[type="submit"] {
     padding: 20px;
     text-align: center;
 }
+
+.dados_utilizador {
+
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.dados_utilizador img {
+
+    width: 40px;
+    height: 40px;
+}
+
+.dados_utilizador span {
+
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.post {
+
+    border: 1px solid rgb(180,180,180);
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.post img {
+
+    width: 30px;
+    height: 30px;
+}

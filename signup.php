@@ -144,7 +144,7 @@
             $ligacao = null;
 
             //upload do arquivo de imagem do avatar para o servidor web
-            move_uploaded_file($avatar['tmp_name'], "/opt/lampp/htdocs/".$avatar['name']);
+            move_uploaded_file($avatar['tmp_name'], "../avatars/".$avatar['name']);
 
             //apresentar uma mensagem de boas vindas ao novo utilizador
             echo '<div class="novo_registro_sucesso">Bem-vindo ao Fórum, <strong>'.$utilizador.'</strong><br><br>
