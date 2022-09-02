@@ -21,6 +21,12 @@
         <img src="../avatars/'.$_SESSION['avatar'].'"><span>'.$_SESSION['user'].'</span> | <a href="logout.php">Logout</a>
     </div>';
 
+
+    //--------------------------------------------------------
+    //novo post
+    echo '<div class="novo_post"><a href="editor_post.php">Novo post</a></div>';
+
+
     //--------------------------------------------------------
     //apresentação dos posts do nosso fórum
 
@@ -62,11 +68,14 @@
             echo '<span id="post_titulo">'.$titulo.'</span>';
             echo '<hr>';
             echo '<div id="post_mensagem">'.$mensagem.'</div>';
+
+            //data e hora da mensagem/post
+            echo '<div id="post_data">'.$data_post.'</div>';
+
             echo '</div>';
 
         }
     }
-
 
     //--------------------------------------------------------
     include 'rodape.php';

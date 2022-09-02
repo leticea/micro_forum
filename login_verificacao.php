@@ -61,8 +61,10 @@
     } else {
 
         //definir os dados da sessão
-        $_SESSION['user'] = $utilizador;
-        $_SESSION['avatar'] = $motor->fetch(PDO::FETCH_ASSOC)['avatar'];
+        $dados_user = $motor->fetch(PDO::FETCH_ASSOC);
+        $_SESSION['id_user'] = $dados_user['id_user'];
+        $_SESSION['user'] = $dados_user['username'];
+        $_SESSION['avatar'] = $dados_user['avatar'];
 
         echo '<div class="login_sucesso">
         Bem-vindo ao fórum, <strong>'.$utilizador.'</strong><br><br>
