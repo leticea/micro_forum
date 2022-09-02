@@ -70,10 +70,17 @@
             echo '<div id="post_mensagem">'.$mensagem.'</div>';
 
             //data e hora da mensagem/post
-            echo '<div id="post_data">'.$data_post.'</div>';
+            echo '<div id="post_data">';
 
-            echo '</div>';
+            //adicionar o link editar para o utilizador ativo
+            if ($id_user == $_SESSION['id_user']) {
 
+                echo '<a href="editor_post.php?pid='.$id_post.'" id="editar">Editar</a>';
+            }
+           
+            echo $data_post;
+            echo '<span id="id_post">#'.$id_post.'</span>';
+            echo '</div></div>';
         }
     }
 

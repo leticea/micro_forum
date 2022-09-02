@@ -161,3 +161,14 @@ input[type="submit"] {
     padding: 20px;
     text-align: left;
 }
+
+#id_post {
+
+    color: rgb(150,150,150);
+    margin: 0px 0px 0px 10px;
+}
+
+#editar {
+
+    margin-right: 10px;
+}
