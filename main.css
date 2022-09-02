@@ -98,14 +98,34 @@ input[type="submit"] {
 
 .post {
 
-    border: 1px solid rgb(180,180,180);
+    border: 2px solid rgb(180,180,180);
     border-radius: 5px;
     margin: 5px;
-    padding: 5px;
+    padding: 20px;
+    background-color: rgb(245,245,245);
 }
 
 .post img {
 
     width: 30px;
     height: 30px;
+}
+
+.post #post_username {
+
+    margin-left: 10px;
+    font: bold 14px tahoma;
+}
+
+.post #post_titulo {
+
+    margin-left: 20px;
+    font: bold 14px tahoma;
+    color: rgb(100,100,100);
+}
+
+.post #post_mensagem {
+
+    padding: 10px 0px 10px 50px;
+    font: 12px tahoma;
 }

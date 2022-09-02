@@ -57,7 +57,11 @@
             echo '<div class="post">';
             
             //dados do user
-            echo '<img src="../avatars/"'.$avatar.'">';
+            echo '<img src="../avatars/avatar.jpg"'.$avatar.'">';
+            echo '<span id="post_username">'.$username.'</span>';
+            echo '<span id="post_titulo">'.$titulo.'</span>';
+            echo '<hr>';
+            echo '<div id="post_mensagem">'.$mensagem.'</div>';
             echo '</div>';
 
         }
