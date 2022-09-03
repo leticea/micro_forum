@@ -21,11 +21,9 @@
         <img src="../avatars/'.$_SESSION['avatar'].'"><span>'.$_SESSION['user'].'</span> | <a href="logout.php">Logout</a>
     </div>';
 
-
     //--------------------------------------------------------
     //novo post
     echo '<div class="novo_post"><a href="editor_post.php">Novo post</a></div>';
-
 
     //--------------------------------------------------------
     //apresentação dos posts do nosso fórum
@@ -63,7 +61,7 @@
             echo '<div class="post">';
             
             //dados do user
-            echo '<img src="../avatars/avatar.jpg"'.$avatar.'">';
+            echo '<img src="../avatars/banguela.jpg"'.$avatar.'">';
             echo '<span id="post_username">'.$username.'</span>';
             echo '<span id="post_titulo">'.$titulo.'</span>';
             echo '<hr>';

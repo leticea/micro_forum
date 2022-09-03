@@ -38,22 +38,13 @@
 
         $titulo = $dados['titulo'];
         $mensagem = $dados['mensagem'];
-
     }
-
-
-
-
-
 
     //--------------------------------------------------------
     //dados do utilizador que está logado
     echo '<div class="dados_utilizador">
         <img src="../avatars/'.$_SESSION['avatar'].'"><span>'.$_SESSION['user'].'</span> | <a href="logout.php">Logout</a>
     </div>';
-
-
-
 
     //--------------------------------------------------------
     //formulário para construção dos posts
@@ -66,7 +57,7 @@
         <input type="hidden" name="id_post" value='.$pid.'>
 
         Título:<br>
-        <input type="text" name="text_titulo" size="67" value='.$titulo.'><br><br>
+        <input type="text" name="text_titulo" size="67" value="'.$titulo.'"><br><br>
 
         Mensagem:<br>
         <textarea rows="10" cols="80" name="text_mensagem">'.$mensagem.'</textarea><br><br>
@@ -77,7 +68,6 @@
         
         </form> 
     </div>';
-
 
     //--------------------------------------------------------
     include 'rodape.php';
