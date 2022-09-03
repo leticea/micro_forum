@@ -61,7 +61,7 @@
             echo '<div class="post">';
             
             //dados do user
-            echo '<img src="../avatars/banguela.jpg"'.$avatar.'">';
+            echo '<img src="../avatars/avatar.jpg"'.$avatar.'">';
             echo '<span id="post_username">'.$username.'</span>';
             echo '<span id="post_titulo">'.$titulo.'</span>';
             echo '<hr>';
@@ -81,6 +81,28 @@
             echo '</div></div>';
         }
     }
+
+    //--------------------------------------------------------
+    //buscar users
+    $ligacao = new PDO("mysql:dbname=$base_dados;host=$host", $user, $password);
+    $motor = $ligacao->prepare("SELECT id_user FROM users");
+    $motor->execute();
+    $numUsers = $motor->rowCount();
+    if ($numUsers == null)
+         $numUsers = 0;
+        
+    //buscar posts
+    $motor = $ligacao->prepare("SELECT id_post FROM posts");
+    $motor->execute();
+    $numPosts = $motor->rowCount();
+    if ($numPosts == null)
+         $numPosts = 0;
+    $ligacao = null;
+
+    //apresentar os dados: número de users registrados e número de posts gravados na bd
+    echo '<div class="totais">
+            Número de utilizadores registrados: <strong>'.$numUsers.'</strong> | Número total de posts: <strong>'.$numPosts.'</strong>
+          </div>';
 
     //--------------------------------------------------------
     include 'rodape.php';

@@ -150,7 +150,7 @@ input[type="submit"] {
 
 .novo_post a:link {color:white; text-decoration: none};
 .novo_post a:visited {color:white; text-decoration: none};
-.novo_post a:hover {color:yellow; text-decoration: none};
+.novo_post a:hover {color: yellow; text-decoration: none};
 .novo_post a:active {color:white; text-decoration: none};
 
 .form_post {
@@ -171,4 +171,13 @@ input[type="submit"] {
 #editar {
 
     margin-right: 10px;
+}
+
+.totais {
+
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 10px;
+    background-color: rgb(180,180,180);
 }
