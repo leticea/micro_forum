@@ -12,5 +12,4 @@
     //logotipo do forum
     echo '<img src="logo.png" height="140"><br><hr>';
 
-
 ?>

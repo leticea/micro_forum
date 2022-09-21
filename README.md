@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="#rocket-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-como-rodar">Como rodar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-como-contribuir">Como contribuir</a>&nbsp;&nbsp;&nbsp;
@@ -11,7 +11,6 @@
   <img alt="forum" src=".github/image.png">
 </p>
 
-
 ## Micro Fórum em PHP
 
 ## 🚀 Tecnologias
@@ -20,7 +19,6 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - [PHP](https://www.php.net/) 
 - [CSS3](https://developer.mozilla.org/pt-BR/docs/Web/CSS) 
-
 
 ## 💻 Projeto
 
