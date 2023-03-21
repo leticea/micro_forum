@@ -17,7 +17,7 @@
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-- [PHP](https://www.php.net/) 
+- [PHP](https://www.php.net/) - 8.2.4
 - [CSS3](https://developer.mozilla.org/pt-BR/docs/Web/CSS) 
 
 ## 💻 Projeto
@@ -29,7 +29,7 @@ Aula do canal [João Ribeiro](https://www.youtube.com/watch?v=eV7GkLq6dCo&list=P
 ## 🚀 Como Rodar
 
 - Clone o projeto.
-- Entre no repositório e click duas vezes no arquivo index.html
+- Entre no repositório e clique duas vezes no arquivo index.html
 
 ## 🤔 Como contribuir
 
