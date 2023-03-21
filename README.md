@@ -29,7 +29,7 @@ Aula do canal [João Ribeiro](https://www.youtube.com/watch?v=eV7GkLq6dCo&list=P
 ## 🚀 Como Rodar
 
 - Clone o projeto.
-- Entre no repositório e clique duas vezes no arquivo index.html
+- Entre no repositório e clique duas vezes no arquivo index.php
 
 ## 🤔 Como contribuir
 
